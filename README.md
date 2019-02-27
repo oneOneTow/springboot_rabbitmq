@@ -29,4 +29,15 @@ spring:
     publisher-returns: true
     template:
       mandatory: true
+      
+reciver
+
+public void process(@Payload PersonMessage message, @Headers Map<String,Object> headers, Channel channel){
+        System.out.println(message.toString());
+        try {
+            channel.basicAck((Long) headers.get(AmqpHeaders.DELIVERY_TAG),false);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
         

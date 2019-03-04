@@ -8,7 +8,7 @@
         factory.setConnectionFactory(connectionFactory);
         factory.setMessageConverter(new Jackson2JsonMessageConverter());
         return factory;
-    } `
+    } `将这段代码贴在配置文件中
 ## 2.端口号是5672，admin的端口号是15672
 ## 3.ack机制
 > producer和consumer都有ack,producer是确定方法是否发送到queue,consumer ack是用户手动ack

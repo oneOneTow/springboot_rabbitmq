@@ -4,10 +4,10 @@ spring:
   application:
     name: producer
   rabbitmq:
-    host: localhost
+    host: 39.107.239.107
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
     publisher-confirms: true
     publisher-returns: true
     template:

@@ -32,4 +32,5 @@ public class Sender {
         });
         this.template.convertAndSend(StaffConstant.BIZ_QUEUE_NAME,StaffConstant.BIZ_ROUTE_KEY,new PersonMessage(1,"lzq","leave"));
     }
+
 }

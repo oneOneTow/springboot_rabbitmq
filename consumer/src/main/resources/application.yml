@@ -4,10 +4,11 @@ spring:
   application:
     name: consumer
   rabbitmq:
-    host: localhost
+    host: 12.0.216.200
     port: 5672
-    username: guest
-    password: guest
+    username: int3
+    password: int3
     listener:
       simple:
         acknowledge-mode: manual
+    virtual-host: int3

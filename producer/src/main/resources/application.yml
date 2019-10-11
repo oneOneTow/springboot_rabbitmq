@@ -4,11 +4,12 @@ spring:
   application:
     name: producer
   rabbitmq:
-    host: 39.107.239.107
+    host: 12.0.216.200
     port: 5672
-    username: admin
-    password: admin
+    username: int3
+    password: int3
     publisher-confirms: true
     publisher-returns: true
     template:
       mandatory: true
+    virtual-host: int3

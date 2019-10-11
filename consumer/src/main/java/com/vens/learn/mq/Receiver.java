@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.Map;
 
 @Component
-@RabbitListener(queues = StaffConstant.QUEUE_NAME)
+@RabbitListener(queues = StaffConstant.BIZ_QUEUE_NAME)
 public class Receiver {
     @RabbitHandler
     public void process(@Payload PersonMessage message, @Headers Map<String,Object> headers, Channel channel){
